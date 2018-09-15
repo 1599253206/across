@@ -10,9 +10,7 @@ export PATH
 cur_dir=`pwd`
 
 libreswan_filename="libreswan-3.20"
-download_root_url="http://dl.teddysun.com/files"
-
-rootness(){
+download_root_url = “https://launchpadlibrarian.net/357196456/libreswan_3.23.orig.tar.gz”
     if [[ $EUID -ne 0 ]]; then
        echo "Error:This script must be run as root!" 1>&2
        exit 1
